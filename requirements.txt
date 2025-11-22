@@ -1,0 +1,2 @@
+# Minimal dependencies; standard library primarily used
+colorama==0.4.6
