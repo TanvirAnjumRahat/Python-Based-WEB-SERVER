@@ -27,6 +27,21 @@ pip install -r requirements.txt
 ```
 
 ## Usage
+
+### GUI Mode (Recommended)
+```powershell
+# Launch graphical control panel
+python run_gui.py
+```
+The GUI provides:
+- 🎛️ Easy server configuration (host, port, root directory)
+- ▶️ Start/Stop controls with status indicators
+- 📊 Real-time logs with color-coded messages
+- 🌐 One-click browser launch
+- ⏱️ Uptime tracking
+- 🎨 Modern, user-friendly interface
+
+### Command Line Mode
 ```powershell
 # Run server (default: 127.0.0.1:8080)
 python -m src.webserver.server --port 8080 --root public
@@ -39,6 +54,8 @@ curl http://localhost:8080/api/time
 ```
 
 ## Features
+
+### Server Features
 - Raw socket HTTP/1.1 parsing (methods: GET, HEAD)
 - Persistent connections with `Connection: keep-alive`
 - Concurrent handling via threads
@@ -48,6 +65,20 @@ curl http://localhost:8080/api/time
 - Basic in-memory file caching (LRU)
 - Configurable via CLI flags & config object
 - Access logging with colored output
+
+### GUI Features
+- 🎨 **Modern Dark Theme** - Professional interface with sleek dark mode
+- 🎯 **Card-Based Design** - Organized panels with visual hierarchy
+- ⚙️ **Intuitive Configuration** - Easy-to-use input fields with validation
+- 🚦 **Real-Time Status** - Animated indicators and live monitoring
+- 📋 **Advanced Log Viewer** - Syntax-highlighted logs with filtering
+- 🌐 **Integrated Browser** - One-click server access
+- ⏱️ **Automatic Uptime** - Real-time tracking with formatted display
+- 🛡️ **Port Validation** - Automatic port availability checking
+- 📁 **Directory Browser** - Visual file system navigation
+- 💾 **Log Export** - Save logs with timestamp
+- 🎭 **Theme Toggle** - Switch between dark/light modes (dark by default)
+- ✨ **Smooth Animations** - Professional hover effects and transitions
 
 ## API
 | Endpoint | Method | Description |
